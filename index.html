@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="text display-flex flex-dir-column align-center">
+    <header class="width-max display-flex flex-dir-row align-center">
+      <img src="images/logo.svg" class="logo-image" />
+      <ul
+        class="header-items txt-clr-grey font-size-100 font-weight-500 text-clr-grey"
+      >
+        <li class="head-item drop-down-btn features clr-change-on-click">
+          Features
+          <img class="display-inline-block" src="images/icon-arrow-down.svg" />
+          <div class="drop-down-menu hidden">
+            <ul class="drop-down-menu-items font-size-100 font-weight-500">
+              <li class="drop-down-menu-item">
+                <img
+                  src="images/icon-todo.svg"
+                  alt=""
+                  class="drop-down-image display-inline-block"
+                />
+                Todo List
+              </li>
+              <li class="drop-down-menu-item">
+                <img
+                  src="images/icon-calendar.svg"
+                  alt=""
+                  class="drop-down-image display-inline-block"
+                />
+                Calender
+              </li>
+              <li class="drop-down-menu-item">
+                <img
+                  src="images/icon-reminders.svg"
+                  alt=""
+                  class="drop-down-image display-inline-block"
+                />
+                Remindres
+              </li>
+              <li class="drop-down-menu-item">
+                <img
+                  src="images/icon-planning.svg"
+                  alt=""
+                  class="drop-down-image"
+                />
+                Planning
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="head-item drop-down-btn company clr-change-on-click">
+          Company
+          <img
+            class="display-inline-block clr-change-on-click"
+            src="images/icon-arrow-down.svg"
+          />
+          <div class="drop-down-menu-2 hidden">
+            <ul class="drop-down-menu-items">
+              <li class="drop-down-menu-item clr-change-on-click">History</li>
+              <li class="drop-down-menu-item clr-change-on-click">Our Team</li>
+              <li class="drop-down-menu-item clr-change-on-click">Blog</li>
+            </ul>
+          </div>
+        </li>
+        <li class="head-item clr-change-on-click">Careers</li>
+        <li class="head-item clr-change-on-click">About</li>
+      </ul>
+      <ul class="header-items float-right">
+        <li class="header-item font-weight-700 txt-clr-grey font-size-100">
+          <button
+            class="header-button fill-noun clr-change-on-click border-false"
+          >
+            Login
+          </button>
+        </li>
+        <li class="header-item">
+          <button
+            class="header-button border-clr-grey fill-noun border-true font-weight-700 txt-clr-grey font-size-100"
+          >
+            Register
+          </button>
+        </li>
+      </ul>
+      <div
+        class="burger-button-container float-right"
+        onclick="toggleChange(this)"
+      >
+        <div class="bar-1"></div>
+        <div class="bar-2"></div>
+        <div class="bar-3"></div>
+      </div>
+    </header>
+    <main class="display-flex flex-idr-column align-center">
+      <article class="display-flex flex-dir-row align-center width-max">
+        <div class="text-container display-flex flex-dir-column height-max">
+          <div class="image-container-mobile width-max">
+            <img
+              class="image-mobile width-max"
+              src="images/image-hero-mobile.png"
+            />
+          </div>
+          <h1 class="font-size-300 txt-clr-black font-weight-700 margin-left-2">
+            Make<br />
+            remote work
+          </h1>
+          <p
+            class="font-size-200 font-weight-500 txt-clr-black margin-top-1 margin-left-2"
+          >
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button
+            class="fill-black border-true border-clr-black font-weight-700 margin-top-1 margin-left-2 txt-clr-white"
+          >
+            Learn more
+          </button>
+          <ul
+            class="width-max display-flex align-center margin-top-1 margin-bottom"
+          >
+            <li class="margin-left-1">
+              <img
+                src="images/client-databiz.svg"
+                alt=""
+                class="company-logo"
+              />
+            </li>
+            <li class="margin-left-1">
+              <img
+                src="images/client-audiophile.svg"
+                alt=""
+                class="company-logo"
+              />
+            </li>
+            <li class="margin-left-1">
+              <img src="images/client-meet.svg" alt="" class="company-logo" />
+            </li>
+            <li class="margin-left-1">
+              <img src="images/client-maker.svg" alt="" class="company-logo" />
+            </li>
+          </ul>
+        </div>
+        <div
+          class="img-container display-flex align-center justify-center float-right"
+        >
+          <img
+            class="height-max width-max"
+            src="images/image-hero-desktop.png"
+          />
+        </div>
+      </article>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
